@@ -2,7 +2,7 @@ WITH source AS (
     SELECT * FROM {{ ref('stg_customers') }}
 )
 
-SELECT
+SELECT DISTINCT
     customer_id,
     company,
     first_name,
